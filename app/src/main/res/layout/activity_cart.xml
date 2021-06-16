@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/color_secondary"
+    >
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_food"></include>
+
+    <ListView
+        android:id="@+id/lvFood"
+        android:layout_width="match_parent"
+        android:layout_height="599dp"
+        android:layout_below="@+id/toolbar"
+        android:paddingLeft="10dp"></ListView>
+
+    <com.ramotion.circlemenu.CircleMenuView android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:id="@+id/circleMenu"
+        app:icon_color="@color/white"
+        app:distance="60dp"
+        android:layout_marginTop="400dp"
+        android:paddingLeft="20dp"
+        android:layout_marginLeft="120dp"
+        app:button_icons="@array/cart"
+        app:button_colors="@array/colors">
+    </com.ramotion.circlemenu.CircleMenuView>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="0dp"
+        android:background="@color/white" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_primary"
+            android:layout_marginTop="10dp"
+            android:text="Tổng tiền:"
+            android:textSize="20dp"
+            android:paddingLeft="10dp"
+            android:textStyle="bold"
+            />
+        <Button
+            android:id="@+id/Book"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="330dp"
+            android:text="Đặt Hàng"
+            android:enabled="false"
+            android:textColor="@color/color_primary"
+            android:background="@drawable/boder_button"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/total"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:text="200000 VND"
+            android:layout_marginLeft="150dp"/>
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+</RelativeLayout>

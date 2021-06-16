@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FoodDetailActivity" android:background="@color/color_secondary">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_food"></include>
+    <ImageView
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="220dp"
+        android:layout_below="@id/toolbar"
+        android:adjustViewBounds="true"
+        android:gravity="center_vertical"
+        android:scaleType="fitXY"
+
+        android:layout_x="0dp"
+        android:layout_y="0dp"
+        android:id="@+id/imgFood"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingLeft="10dp"
+        android:textSize="30sp"
+        android:paddingRight="10dp"
+        android:textColor="@color/white"
+        android:layout_below="@id/imgFood"
+        android:id="@+id/nameFood"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@id/nameFood"
+        android:paddingLeft="10dp"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:paddingRight="10dp"
+        android:id="@+id/priceFood"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:textColor="@color/white"
+
+        android:layout_below="@id/priceFood"
+        android:paddingRight="10dp"
+        android:id="@+id/description"
+        android:textSize="15sp"
+        android:paddingLeft="10dp" />
+    <com.ramotion.circlemenu.CircleMenuView android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:id="@+id/circleMenu"
+        app:icon_color="@color/white"
+        app:distance="60dp"
+        android:layout_marginTop="450dp"
+        android:paddingLeft="20dp"
+        android:layout_marginLeft="120dp"
+        app:button_icons="@array/icons"
+        app:button_colors="@array/colors">
+    </com.ramotion.circlemenu.CircleMenuView>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="0dp"
+        android:background="@color/white" >
+        <Button
+            android:id="@+id/Book"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="330dp"
+            android:background="@drawable/boder_button"
+            android:textColor="@color/color_primary"
+            android:text="Mua Ngay"/>
+
+        <EditText
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/amount"
+            android:text="1"
+            android:textColor="@color/color_primary"
+            android:gravity="center"
+            android:layout_marginLeft="70dp"/>
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="-"
+            android:textSize="20dp"
+            android:clickable="true"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/boder_button"
+            android:id="@+id/down"/>
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/up"
+            android:clickable="true"
+            android:textSize="20dp"
+            android:text="+"
+            android:layout_marginLeft="120dp"
+            android:background="@drawable/boder_button"/>
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+</RelativeLayout>

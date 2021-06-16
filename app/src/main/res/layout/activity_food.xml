@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FoodActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_food"></include>
+        <LinearLayout
+        android:background="@color/color_secondary"
+        android:layout_width="match_parent"
+        android:layout_below="@id/toolbar"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:id="@id/search"
+        android:orientation="horizontal">
+
+        <SearchView
+            android:id="@+id/searchFood"
+            android:layout_width="450dp"
+            android:layout_height="50dp"
+            android:background="@drawable/boder_edittext"
+            android:queryHint="Tên món..."
+            android:iconifiedByDefault="false"
+            ></SearchView>
+        </LinearLayout>
+        <ListView
+            android:id="@+id/lvFood"
+            android:layout_below="@id/search"
+            android:layout_width="match_parent"
+            android:layout_height="700dp"
+            ></ListView>
+</RelativeLayout>
