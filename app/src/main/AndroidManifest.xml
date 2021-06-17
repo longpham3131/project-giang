@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="hcmute.edu.vn.mssv18128062">
+    package="hcmute.edu.vn.nttgiang18110275">
 
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
@@ -28,7 +28,7 @@
         android:theme="@style/Theme.MyProject">
 
         <activity
-            android:name=".MainActivity"
+            android:name="hcmute.edu.vn.nttgiang18110275.MainActivity"
             android:label="@string/activity_login"
             android:theme="@style/noTitle">
             <intent-filter>
@@ -38,12 +38,12 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".SignUpActivity"
+            android:name="hcmute.edu.vn.nttgiang18110275.SignUpActivity"
             android:theme="@style/noTitle" />
 
         <provider
             android:name="androidx.core.content.FileProvider"
-            android:authorities="hcmute.edu.vn.mssv18128062"
+            android:authorities="hcmute.edu.vn.nttgiang18110275"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data
@@ -52,30 +52,30 @@
         </provider>
 
         <activity
-            android:name=".HomePageActivity"
+            android:name="hcmute.edu.vn.nttgiang18110275.HomePageActivity"
             android:theme="@style/noTitle" />
         <activity
-            android:name=".MyInfoActivity"
+            android:name="hcmute.edu.vn.nttgiang18110275.MyInfoActivity"
             android:theme="@style/noTitle" />
         <activity
-            android:name=".CartActivity"
+            android:name="hcmute.edu.vn.nttgiang18110275.CartActivity"
             android:theme="@style/noTitle" />
         <activity
-            android:name=".FoodActivity"
+            android:name="hcmute.edu.vn.nttgiang18110275.FoodActivity"
             android:theme="@style/noTitle" />
         <activity
-            android:name=".FoodDetailActivity"
+            android:name="hcmute.edu.vn.nttgiang18110275.FoodDetailActivity"
             android:theme="@style/noTitle" />
         <activity
-            android:name=".RateActivity"
+            android:name="hcmute.edu.vn.nttgiang18110275.RateActivity"
             android:theme="@style/themeRate" />
         <activity
-            android:name=".CartDetailActivity"
+            android:name="hcmute.edu.vn.nttgiang18110275.CartDetailActivity"
             android:theme="@style/noTitle" />
         <activity
-            android:name=".ConfirmAddressActivity"
+            android:name="hcmute.edu.vn.nttgiang18110275.ConfirmAddressActivity"
             android:theme="@style/noTitle" />
-        <activity android:name=".OrderDetailActivity"
+        <activity android:name="hcmute.edu.vn.nttgiang18110275.OrderDetailActivity"
             android:theme="@style/noTitle"></activity>
     </application>
 
